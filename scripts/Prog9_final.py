@@ -13,7 +13,8 @@ from scipy.interpolate import make_interp_spline
 import os 
 
 # Load the combined slippage data
-file_path= os.path.join('data', 'CRWV', 'slippage', 'all_slippage_combined.csv')
+file_dir= os.path.dirname(os.path.dirname(__file__))
+file_path= os.path.join(file_dir, 'data', 'CRWV', 'slippage', 'all_slippage_combined.csv')
 # file_path = r'data\CRWV\slippage\all_slippage_combined.csv'
 df = pd.read_csv(file_path)
 

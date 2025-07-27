@@ -13,7 +13,8 @@ import os
 # source_dir = r'C:\Projects\Blockhouse\CRWV'
 # source_dir = os.path.join(r'data\CRWV', 'CRWV_2025-04-03 00_00_00+00_00.csv')
 #slippage_dir = os.path.join(source_dir, "slippage")
-source_dir=os.path.join('data', 'CRWV')
+file_dir= os.path.dirname(os.path.dirname(__file__))
+source_dir=os.path.join(file_dir, 'data', 'CRWV')
 # source_dir= r'data\CRWV'
 slippage_dir = os.path.join(source_dir, "slippage")
 os.makedirs(slippage_dir, exist_ok=True)

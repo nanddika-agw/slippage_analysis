@@ -12,7 +12,8 @@ import os
 
 # Load the file
 #file_path = r'C:\Projects\Blockhouse\CRWV\CRWV_2025-04-03 00_00_00+00_00.csv'
-file_path = os.path.join( r'data\CRWV', 'CRWV_2025-04-03 00_00_00+00_00.csv')
+file_dir= os.path.dirname(os.path.dirname(__file__))
+file_path = os.path.join(file_dir, r'data\CRWV', 'CRWV_2025-04-03 00_00_00+00_00.csv')
 df = pd.read_csv(file_path)
 
 

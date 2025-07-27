@@ -17,7 +17,8 @@ import os
 
 # Path to slippage folder
 # slippage_dir = r'data\CRWV\slippage'
-slippage_dir=os.path.join('data', 'CRWV', 'slippage')
+file_dir= os.path.dirname(os.path.dirname(__file__))
+slippage_dir=os.path.join(file_dir, 'data', 'CRWV', 'slippage')
 
 
 # Container to hold all rows
