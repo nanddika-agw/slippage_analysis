@@ -10,9 +10,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import make_interp_spline
+import os 
 
 # Load the combined slippage data
-file_path = r'data\CRWV\slippage\all_slippage_combined.csv'
+file_path= os.path.join('data', 'CRWV', 'slippage', 'all_slippage_combined.csv')
+# file_path = r'data\CRWV\slippage\all_slippage_combined.csv'
 df = pd.read_csv(file_path)
 
 
