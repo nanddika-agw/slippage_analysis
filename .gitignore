@@ -1,7 +1,0 @@
-# Ignore large CSV data files
-*.csv
-
-# Ignore temp files and system junk
-__pycache__/
-*.pyc
-.DS_Store
